@@ -26,7 +26,7 @@ Route::get('/home', function() {
 });
 
 Route::post('/getRequest', function(Request $request) {
-    return $input = $request->all(); 
+    return $input = $request->all();
 });
 
 //Route::redirect('/redirectTest', '/home', 301);
@@ -80,11 +80,11 @@ Route::get('/search/{search}', function ($search) {
 
     // // Generating URLs...
     // $url = route('profile');
-    
+
     // // Generating Redirects...
     // return redirect()->route('profile');
 
-// middele ware Route dobut 
+// middele ware Route dobut
 
 Route::prefix('admin')->group(function () {
     Route::get('/users', function () {
@@ -96,5 +96,6 @@ Route::prefix('admin')->group(function () {
     });
 });
 
-
-
+Route::get('/sanja', function () {
+    return 'sanja';
+});
